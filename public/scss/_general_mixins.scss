@@ -1,0 +1,34 @@
+@mixin flexCenter($direction) {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: $direction;
+}
+
+@mixin opacity($value){
+    background-color: #000000;
+    img{
+        opacity: $value;
+    }
+}
+
+@mixin imageScreenCover($view-height) {
+    height: $view-height ;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+
+@mixin backgroundCover {
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+
+@mixin position-absolute($top, $left){
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: translate(-50%, -50%);
+}

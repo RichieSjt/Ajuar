@@ -1,0 +1,71 @@
+//ITC Avant Garde Std Bk Regular
+.avant-garde-bk{
+    font-family:'ITC';
+}
+//ITC Avant Garde Std XL
+.avant-garde-xl{
+    font-family:'ITC_XL';
+}
+//Qualy bold
+.qualy-bold{
+    font-family:'Qualy Bold';
+}
+//Quick Signature
+.parisienne-regular{
+    font-family:'Parisienne Regular';
+}
+//Kristi Regular
+.kristi-regular{
+    font-family:'Kristi Regular';
+}
+
+.font-lg-20{
+    @include responsiveLarge(){
+        font-size: 20px;
+    }
+}
+
+.font-lg-70{
+    @include responsiveLarge(){
+        font-size: 70px;
+    }
+}
+
+.font-lg-60{
+    @include responsiveLarge(){
+        font-size: 60px;
+    }
+}
+.font-intro-cards{
+    @include responsiveLarge(){
+        font-size: 20px;
+    }
+    @include responsiveMobile(){
+        font-size: 20px;
+    }
+}
+
+.banner-titles{
+    @include responsiveLarge(){
+        font-size: 45px;
+    }
+    @include responsiveMobile(){
+        font-size: 40px;
+    }
+}
+
+.wedding-titles{
+    @extend .banner-titles;
+    @include flexCenter(row);
+    @include responsive(768px, 1199px){
+        min-height: 75px;
+    }
+}
+
+.portrait-titles{
+    @extend .banner-titles;
+    @include flexCenter(row);
+    @include responsive(768px, 991px){
+        min-height: 115px;
+    }
+}
