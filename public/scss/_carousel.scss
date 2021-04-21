@@ -1,0 +1,13 @@
+#carouselHome{
+    .carousel-item{
+        @include opacity(0.6);
+
+        img{
+            @include imageScreenCover(50vh);
+        
+            @include responsiveLarge(){
+                @include imageScreenCover(100vh);
+            }
+        }
+    }
+}

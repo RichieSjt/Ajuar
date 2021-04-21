@@ -8,11 +8,16 @@ router.get('', (req, res) => {
     })
 })
 
+router.get('/home', (req, res) => {
+    res.render('index', {
+        active: { home: true }
+    })
+})
+
 // 404
 router.get('*', (req, res) => {
     res.render('404',  {
         title: '404',
-        name: 'AF',
         message: 'Page not found'
     })
 })
