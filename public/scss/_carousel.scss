@@ -1,9 +1,13 @@
+.carousel-container {
+    margin-top: 70.08px;
+}
+
 #carouselHome{
     .carousel-item{
         @include opacity(0.6);
 
         img{
-            @include imageScreenCover(50vh);
+            @include imageScreenCover(60vh);
         
             @include responsiveLarge(){
                 @include imageScreenCover(100vh);

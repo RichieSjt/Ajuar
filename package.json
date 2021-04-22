@@ -7,7 +7,9 @@
     "start": "node src/app.js",
     "dev": "nodemon src/app.js --ext js,mjs,json,hbs,scss --exec \"npm run compile-sass\"",
     "compile-sass": "sass --style=compressed --update public/scss/styles.scss public/css/styles.css && node src/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-no-nodemon": "node src/app.js --exec \"npm run watch-sass\"",
+    "watch-sass": "sass --watch scss/styles.scss css/styles.css"
   },
   "repository": {
     "type": "git",

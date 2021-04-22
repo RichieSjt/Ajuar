@@ -11,3 +11,65 @@
     width: 90px;
     height: auto;
 }
+
+.catalog{
+    img{
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+    }
+    div {
+        max-width: 250px;
+        width: 100%;
+    }
+}
+.catalog-img{
+    max-width: 300px;
+    width: 100%;
+}
+
+.bg-img-home{
+    @include imageScreenCover(70vh);
+
+    background-image: url("../img/home/papel-1.png");
+    background-repeat: repeat;
+    
+}
+
+.sections-home{
+    @include responsiveLarge() {
+        @include imageScreenCover(70vh);
+    }
+}
+
+.custom-btn {
+    background-color: $yellow-ajuar;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    @include flexCenter(row);
+    transition-property: all;
+    transition-duration: 0.4s;
+    i {
+        padding-top: 3.4px;
+    }
+    &:hover {
+        background-color: $orange-ajuar;
+        color: black;
+        border: 2px solid black;
+    }
+}
+
+.ajuar-img{
+    max-width: 400px;
+    width: 100%;
+}
+
+.nav-item {
+    .nav-link{
+        font-size: 24px;
+    }
+    &.active{
+        border-bottom: 2px solid;
+    }
+}
